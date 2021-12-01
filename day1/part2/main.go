@@ -38,7 +38,7 @@ func main()  {
 		window.Push(scanner.Text())
 
 		if lastsum < window.Sum() {
-			count += 1
+			count++
 		}
 	}
 
