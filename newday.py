@@ -36,8 +36,13 @@ def init_basic(path, **kwargs):
 # generate program templates
 try:
     now = datetime.now().astimezone(timezone.utc)
-    init_basic(part1_path, now=now, day=day, part=1, data=f"data/day{day}.txt")
-    init_basic(part2_path, now=now, day=day, part=2, data=f"data/day{day}.txt")
+    same = {
+        "now": now,
+        "day": day,
+        "data": f"data/day{day}.txt"
+    }
+    init_basic(part1_path, **same, part=1)
+    init_basic(part2_path, **same, part=2)
     print("generating templates...")
 except Exception as e:
     print("can't generate templates")
