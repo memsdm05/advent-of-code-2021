@@ -21,6 +21,7 @@ day = int(sys.argv[1])
 part1_path = f"day{day}/part1"
 part2_path = f"day{day}/part2"
 
+
 # create project folders
 try:
     os.makedirs(part1_path)
@@ -28,6 +29,7 @@ try:
     print(f"day {day} directories done...")
 except:    
     print("directories for this day probably exist already")
+
 
 def init_basic(path, **kwargs):
     with open(path + "/main.go", "w") as f:
