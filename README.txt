@@ -3,4 +3,4 @@ https://adventofcode.com/2021
 
 1 - **
 2 - **
-
+3 - ** (cringe day)
