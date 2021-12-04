@@ -32,7 +32,7 @@ except:
 
 
 def init_basic(path, **kwargs):
-    with open(path + "/main.go", "w") as f:
+    with open(f"{path}/d{kwargs[day]}p{kwargs[part]}.go", "w") as f:
         f.write(TEMPLATE.format(**kwargs))
 
 # generate program templates
