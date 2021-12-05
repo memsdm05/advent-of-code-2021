@@ -12,3 +12,8 @@ func LoadScanner(path string) (*bufio.Scanner, error) {
 	}
 	return bufio.NewScanner(f), nil
 }
+
+func Next(scanner *bufio.Scanner) string {
+	scanner.Scan()
+	return scanner.Text()
+}
